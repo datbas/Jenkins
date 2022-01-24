@@ -3,7 +3,7 @@ pipeline {
     stages {
             stage('Display Build info') {
                 steps {
-                    echo "BRANCH_NAME: ${BRANCH_NAME}"
+                    sh "echo BRANCH_NAME: ${BRANCH_NAME}"
                 }
             }
     }
